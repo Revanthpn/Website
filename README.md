@@ -1,3 +1,3 @@
 # Website
-Personal website using HTML and CSS
-https://revanth-pn.000webhostapp.com/
+Personal website using HTML and CSS  
+https://revanthpn.github.io/
