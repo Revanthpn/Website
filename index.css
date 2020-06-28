@@ -103,6 +103,10 @@ a {
     margin: 0px;
 }
 
+.subheading_2 a {
+    font-size: 23px;
+}
+
 .subheading_2 p{
     font-size: 15px;
     margin: 2px 0px 3px 0px;
@@ -130,6 +134,7 @@ h1,h2,h3,h4,h5,h6 {
 .proj_lists p {
     margin: 2px 0px 25px 0px;
     font-size: 17px;
+    text-align: justify;
 }
 
 .line {
@@ -227,6 +232,36 @@ hr {
         position: absolute;
         color: white;
     }
+
+    .heading {
+        font-size: 2em;
+    }
+
+    .subheading_1 {
+        font-size: 17px;
+    }
+
+    .subheading_2 a{
+        font-size: 16px;
+    }
+
+    .subheading_2 p {
+        font-size: 14px;
+    }
+    
+    .subheading_3 {
+        font-size: 16px;
+    }
+
+    .proj_lists a {
+        font-size: 16px;
+    }
+
+    .proj_lists p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
 }
     
 /* Small devices (landscape phones, 576px and up) */
