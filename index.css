@@ -6,7 +6,8 @@ body {
 .l_section {
     display: inline-block;
     height: 100vh;
-    background-color: rgb(66, 75, 128);
+    width: 300px;
+    background: rgb(66, 75, 128);
     color:rgb(240, 232, 232);
     position: fixed;
 }
@@ -21,7 +22,8 @@ body {
     border-radius: 100%;
     height: 250px;
     width: 250px;
-    margin: 0px 20px;
+    margin: 0px auto;
+    display: block;
     border: 5px solid rgb(101, 106, 168);
     
 }
@@ -68,7 +70,7 @@ body {
 .r_section {
     display:inline-block;
     position: absolute;
-    margin: 30px 0px 0px 330px;
+    margin: 30px 30px 0px 330px;
 }
 
 .rname {
@@ -129,25 +131,72 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 17px;
 }
 
+.line {
+    width: 30px;
+    height: 3px;
+    background:white;
+    margin: 5px;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px;
+    position: absolute;
+    right: 0;
+    transition: all 0.4s ease-out;
+    z-index: 3;
+}
+
+.hamburger.close {
+    transform: rotate(180deg);
+}
+
+.hamburger.close .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.close .line:nth-child(2) {
+    opacity: 0;
+}    
+
+.hamburger.close .line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.sect {
+    padding: 60px 0px;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
-    .line {
-        width: 30px;
-        height: 3px;
-        background:white;
-        margin: 5px;
+
+    .img {
+        width: 150px;
+        height: 150px;
     }
 
-    .hamburger {
-        cursor: pointer;
-        display: inline-block;
-        margin: 15px;
-        position: absolute;
-        right: 0;
+    .v-center {
+        transform: translateY(-65%);
     }
 
     .l_section {
-        display: none;
+        width: 100%;
+        z-index: 1;
+        top: 60px;
+        transform: translate3d(-100%,0,0);
+        transition: all 0.7s ease-out;
+    }
+
+    .l_section.show {
+        width: 100%;
+        z-index: 1;
+        top: 60px;
+        transform: translate3d(0,0,0);
+    }
+
+    .hide {
+        visibility: hidden;
     }
 
     .r_section {
@@ -190,11 +239,17 @@ h1,h2,h3,h4,h5,h6 {
     .nav-bar {
         display: none;
     }
+    .hamburger {
+        visibility: hidden;
+    }
 }
     
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .nav-bar {
         display: none;
+    }
+    .hamburger {
+        visibility: hidden;
     }
 }
