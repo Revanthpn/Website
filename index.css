@@ -31,6 +31,22 @@ body {
     text-align: center;
 }
 
+.collection {
+    margin: 25px 0px 30px;
+}
+
+.collection a {
+    color: white;
+    width: 100%;
+    display: block;
+    line-height: 3rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.collection a:hover {
+    background-color: rgb(101, 106, 168);
+}
 
 .media {
     margin: 20px auto;
@@ -121,3 +137,74 @@ h1,h2,h3,h4,h5,h6 {
     margin: 2px 0px 25px 0px;
     font-size: 17px;
     font-family: cursive;}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .line {
+        width: 30px;
+        height: 3px;
+        background:white;
+        margin: 5px;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        display: inline-block;
+        margin: 15px;
+        position: absolute;
+        right: 0;
+    }
+
+    .l_section {
+        display: none;
+    }
+
+    .r_section {
+        margin: 60px 20px 0px;
+    }
+
+    .rname {
+        display: none;
+    }
+
+    .nav-bar {
+        background-color: rgb(66, 75, 128);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0px;
+        height: 60px;
+    }
+
+    .nav-bar h1 {
+        display: inline-block;
+        margin: 11px 15px;
+        position: absolute;
+        color: white;
+        font-family: sans-serif;
+    }
+}
+    
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+    
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+    
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-bar {
+        display: none;
+    }
+}
+    
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .nav-bar {
+        display: none;
+    }
+}
