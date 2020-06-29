@@ -47,6 +47,7 @@ body {
 
 .collection a:hover {
     background-color: rgb(101, 106, 168);
+    transition: all 0.4s ease-out;
 }
 
 .media {
@@ -65,6 +66,7 @@ body {
 
 .media a:hover i {
     transform: scale(1.3);
+    transition: all 0.4s ease-out;
 }
 
 .r_section {
@@ -224,6 +226,7 @@ hr {
         width: 100%;
         left: 0px;
         height: 60px;
+        z-index: 1;
     }
 
     .nav-bar h1 {
